@@ -5,7 +5,7 @@ Every function here described checks if the "turtle" and "opstack" passed are va
 Every function fails if "turtle" or "opstack" is invalid. 
 "opstack" is valid only if each line that it contains is valid.
 
-1) 	Function : pencolor
+**1)** 	Function : pencolor
 	arg : turtle
 	arg : opstack
 	arg : color (as keyword)
@@ -18,7 +18,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Returns a new turtle whith the new color and an unchanged opstack.
 	If the supplied color is not valid return nil.
 	
-2)	Function : pendown
+**2)**	Function : pendown
 	arg : turtle
 	arg : opstack
 	
@@ -29,7 +29,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Only when the pen is true does the turtle draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 	
-3)	Function : penup
+**3)**	Function : penup
 	arg : turtle
 	arg : opstack
 	
@@ -39,7 +39,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Changes the pen position to nil(false).
 	Returns the new "turtle" and an unchanged "opstack".
 	
-4)	Function : setx
+**4)**	Function : setx
 	arg : turtle
 	arg : opstack
 	arg : x (must be integer)
@@ -51,7 +51,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Does not draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 
-5)	Function : sety
+**5)**	Function : sety
 	arg : turtle
 	arg : opstack
 	arg : y (must be integer)
@@ -63,7 +63,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Does not draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 	
-6)	Function : setheading
+**6)**	Function : setheading
 	arg : turtle
 	arg : opstack
 	arg : degrees (0 <= degrees < 360)
@@ -75,7 +75,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Does not draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 	
-7)	Function : left
+**7)**	Function : left
 	arg : turtle
 	arg : opstack
 	arg : degrees (degrees >= 0)
@@ -89,12 +89,9 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Does not draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 	
-8)	Function : right
-
-	arg : turtle
-	
-	arg : opstack
-	
+**8)**	Function : right
+	arg : turtle	
+	arg : opstack	
 	arg : degrees (degrees >= 0)
 	
 	Example : (right '(:turtle 0 0 0 :black T) nil 45)
@@ -106,7 +103,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Does not draw lines.
 	Returns the new "turtle" and an unchanged "opstack".
 	
-9)	Function : forward
+**9)**	Function : forward
 	arg : turtle
 	arg : opstack
 	arg : distance (distance >= 0)
@@ -118,7 +115,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Draws a line and adds it to the top of the opstack if the pen is down(T).
 	The line is drawn from the previous position to the one after moving.
 	
-10)	Function : back
+**10)**	Function : back
 	arg : turtle
 	arg : opstack
 	arg : distance (distance >= 0)
@@ -130,7 +127,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Draws a line and adds it to the top of the opstack if the pen is down(T).
 	The line is drawn from the previous position to the one after moving.
 	
-11)	Function : home
+**11)**	Function : home
 	arg : turtle
 	arg : opstack	
 	
@@ -141,7 +138,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Draws a line and adds it to the top of the opstack if the pen is down(T).
 	The line is drawn from the previous position to the one after moving.
 	
-12)	Function : dump-svg
+**12)**	Function : dump-svg
 	arg : filename	(string)
 	arg : opstack	(not nil)
 	
