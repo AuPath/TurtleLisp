@@ -9,6 +9,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : color (as keyword)
+	
 	Example : (pencolor '(:turtle 0 0 0 :black T) nil ':red)
 			   => (:turtle 0 0 0 :red T) nil
 			   
@@ -20,6 +21,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 2)	Function : pendown
 	arg : turtle
 	arg : opstack
+	
 	Example : (pendown '(:turtle 0 0 0 :black F) nil)
 				=> (:turtle 0 0 0 :black T) nil
 				
@@ -30,6 +32,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 3)	Function : penup
 	arg : turtle
 	arg : opstack
+	
 	Example : (pendown '(:turtle 0 0 0 :black T) nil)
 				=> (:turtle 0 0 0 :black F) nil
 				
@@ -40,6 +43,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : x (must be integer)
+	
 	Example : (setx '(:turtle 0 0 0 :black T) nil 100)
 				=> (:turtle 100 0 0 :black T) nil
 				
@@ -51,6 +55,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : y (must be integer)
+	
 	Example : (sety '(:turtle 0 0 0 :black T) nil 100)
 				=> (:turtle 0 100 0 :black T) nil
 				
@@ -62,6 +67,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : degrees (0 <= degrees < 360)
+	
 	Example : (setheading '(:turtle 0 0 0 :black T) nil 45)
 				=> (:turtle 0 0 45 :black T) nil
 				
@@ -73,6 +79,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : degrees (degrees >= 0)
+	
 	Example : (left '(:turtle 0 0 0 :black T) nil 45)
 				=> (:turtle 0 0 315 :black T) nil
 			  (left '(:turtle 0 0 0 :black T) nil 362)
@@ -83,9 +90,13 @@ Every function fails if "turtle" or "opstack" is invalid.
 	Returns the new "turtle" and an unchanged "opstack".
 	
 8)	Function : right
+
 	arg : turtle
+	
 	arg : opstack
+	
 	arg : degrees (degrees >= 0)
+	
 	Example : (right '(:turtle 0 0 0 :black T) nil 45)
 				=> (:turtle 0 0 45 :black T) nil
 			  (right '(:turtle 0 0 0 :black T) nil 362)
@@ -99,6 +110,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : distance (distance >= 0)
+	
 	Example : (forward '(:turtle 0 0 0 :black T) nil 100)
 				=> (:turtle 0 -100 0 :black T) ((:line 0 0 0 -100 :black))
 
@@ -110,6 +122,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 	arg : turtle
 	arg : opstack
 	arg : distance (distance >= 0)
+	
 	Example : (back '(:turtle 0 0 0 :black T) nil 100)
 				=> (:turtle 0 100 0 :black T) ((:line 0 0 0 100 :black))
 
@@ -120,6 +133,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 11)	Function : home
 	arg : turtle
 	arg : opstack	
+	
 	Example : (home '(:turtle 42 626 0 :black T) nil)
 				=> (:turtle 0 0 0 :black T) ((:line 42 626 0 0 :black))
 
@@ -130,6 +144,7 @@ Every function fails if "turtle" or "opstack" is invalid.
 12)	Function : dump-svg
 	arg : filename	(string)
 	arg : opstack	(not nil)
+	
 	Example : (dump-svg "LispFile" '((:LINE 42 626 0 0 :BLACK)))
 				=> T
 	
